@@ -1,6 +1,18 @@
-* {
+ * {
     margin: 0%;
 }
+
+.laranja-sysop {
+    color: #ff6200;
+}
+
+.sora {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
 
 header {
 
@@ -12,7 +24,6 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #121820;
-    border: solid;
     
     
 }
@@ -75,6 +86,105 @@ li a {
 li a:hover:not(.active) {
 
     color: orange;
+}
+
+#top, #bottom {
+
+    height: 40vh;
+    width: max;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 40px;
+}
+
+#top {
+
+    padding-top: 120px;
+    background-color: #09121d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+    
+}
+
+#top-left, #top-right {
+
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-left {
+
+    max-width: 100%;
+    width: 550px ;
+    text-align: left;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger
+    
+    xz;
+    color: white;
+    position: inherit;
+
+}
+
+#top-left p {
+    min-width: 200px; 
+    max-width: 100%; 
+}
+
+#top-right {
+
+   width: 1200px;  
+   color: white
+}
+
+#bottom {
+    padding-top: 60px;
+    background-color: #ff6200;
+} 
+
+#forma {
+
+    height: 300px;
+    width: 169.5vh;
+    border: solid;
+    border-style: dotted;
+    padding-left: 90px;
+
+}
+
+.carrosel {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 80vw);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: hidden;
+    height: 50vh;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+    transition: transform 2s linear;
+    height: 300px;
+    width: 900px;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+li {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
 }
 
 

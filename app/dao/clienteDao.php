@@ -52,11 +52,54 @@ class clienteDao () {
     public function alterarCliente(Cliente $cliente) {
         include_once 'conexao.php';
         
+        $conex = new Conexao();
+        $conex->fazConexao();
+        $sql = "UPDATE cliente SET razaoSocial, cnpj, nmrCtt, emailCtt, endereco, nMaquinas, temServidor
+        VALUES (:razaoSocial, :cnpj, :nmrCtt, :emailCtt, :endereco, :nMaquinas, :temServidor) WHERE id = :id";
+
+
+    $stmt->bindValue(':id', $cliente->getId());
+    $stmt->bindValue(':razaoSocial', $cliente->getRazaoSocial());
+    $stmt->bindValue(':cnpj', $cliente->getCnpj());
+    $stmt->bindValue(':nmrCtt', $cliente->getNmrCtt());
+    $stmt->bindValue(':emailCtt', $cliente->getEmailCtt());
+    $stmt->bindValue(':endereco', $cliente->getEndereco());
+    $stmt->bindValue(':nMaquinas', $cliente->getNMaquinas());
+    $stmt->bindValue(':temServidor', $cliente->getTemServidor());
+
+    $res = $stmt->execute();
+
+    if ($res) {
+        echo '<script>alert("Alteração concluída!")</script>';
+        } else {
+        echo '<script>alert("Erro!")</script>';
+    }
+    echo '<script>location.href="../controller/processa.php?op=listarCliente"</script>';
+    // ALTERAR ESSA LINHA !!!
+    }
+
+    public function excluirCliente($id){
+        include_once 'conexao.php';
+
+        $conex = new Conexao();
+        $conex->fazConexao();
+        $sql = "DELETE FROM cliente WHERE id = '$id'";
+
+        $res = $conex->conn->query($sql);
+
+            if ($res) {
+                echo '<script>alert("Exclusão concluída!")</script>';
+            } else {
+                echo '<script>alert("Erro!")</script>';
+            }
+            echo '<script>location.href="../controller/processa.php?op=listarCliente"</script>';
+            // ALTERAR ESSA LINHA !!!
+            }
 
     }
 
 
-}
+
 
 
 

@@ -126,9 +126,7 @@ li a:hover:not(.active) {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: larger
-    
-    xz;
+    font-size: larger;
     color: white;
     position: inherit;
 
@@ -146,19 +144,63 @@ li a:hover:not(.active) {
 }
 
 #bottom {
+    height: 100vh;
     padding-top: 60px;
     background-color: #ff6200;
 } 
 
+#bottom h1 {
+
+    color: white;
+    
+}
+
 #forma {
 
-    height: 300px;
+    height: max-content;
     width: 169.5vh;
     border: solid;
     border-style: dotted;
-    padding-left: 90px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    
 
 }
+
+#title1 {
+    padding: 10px;
+    border: solid;
+    border-style: dotted;
+    width: max-content;
+}
+
+form {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.labelText {
+
+    color: white;
+    width: max-content;
+    height: max-content;
+    font-family: "Sora", sans-serif; ;
+
+}
+
+.entrada {
+    
+    width: 200px;
+    height: max-content;
+    font-family: "Sora", sans-serif; ;
+
+
+}
+
 
 .carrosel {
     padding: 1rem;

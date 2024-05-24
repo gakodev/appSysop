@@ -52,37 +52,43 @@
         <h1 class="sora">Formulário de mapeamento do cliente</h1>
 
         <div id="forma">
-            <div id="title1">
-                <h2 class="sora">Registro do cliente:</h2>
-            </div>
-
-            <form id="form" method="post" action="app/controller/processar.php">
+           
+            <div id="card-form">
                 
+                <form id="form" method="post" action="app/controller/processar.php" onsubmit="return validaCampos()" >
                     <label class="labelText" for="razaoSocial">* Razão social:</label>
-                    <input type="text" class="entrada" name="razaoSocial"><br>
+                    <input id="input1" type="text" class="entrada" name="razaoSocial"><br>
                     <label class="labelText" for="cnpj">* CNPJ:</label>
-                    <input type="text" class="entrada" name="cnpj"><br>
+                    <input id="input2" type="text" class="entrada" name="cnpj"><br>
                     <label class="labelText" for="nmrCtt">* Número para contato:</label>
-                    <input type="text" class="entrada" name="nmrCtt"><br>
+                    <input id="input3" type="text" class="entrada" name="nmrCtt"><br>
                     <label class="labelText" for="emailCtt">* Email:</label>
-                    <input type="text" class="entrada" name="emailCtt"><br>
+                    <input id="input4" type="text" class="entrada" name="emailCtt"><br>
                     <label class="labelText" for="endereco">* Endereço:</label>
-                    <input type="text" class="entrada" name="endereco"><br>
+                    <input id="input5" type="text" class="entrada" name="endereco"><br>
                     <label class="labelText" for="nMaquinas">* Número de máquinas:</label>
-                    <input type="text" class="entrada" name="nMaquinas"><br>
+                    <input id="input6" type="text" class="entrada" name="nMaquinas"><br>
                     <label class="labelText" for="temServidor">* Tem servidor?</label>
-                    <select type="text" class="entrada" name="temServidor">
+                    <select id="input7" type="text" class="entrada" name="temServidor">
                         <option value="Não">Não</option>
                         <option value="Sim">Sim</option>
                     </select>
-
-                    <input class='entrada' type='hidden' name='id' value='$id'><br>
-                    <input class='entrada' type='hidden' name='op' value='cadastrarCliente'><br>
-                    <div id='div_botao'>
-                        <input class='butao' name='cadastro' type='submit' value='Realizar o cadastro'>
+                    <input type='hidden' name='id' value='$id'><br>
+                    <input type='hidden' name='op' value='cadastrarCliente'><br>
+                    <div id='div-botao-form'>
+                        <button id="cad" class="button-28" role="button">Fazer cadastro</button>
                     </div>
-                
-            </form>
+                </form>
+
+                <hr>
+
+                <div id="card-form-right">
+                        <img src="imgs/bg-cloud.png" alt="">
+                </div>
+            </div>
+            
+            
+            
         </div>
     </div>
 

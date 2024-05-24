@@ -1,10 +1,10 @@
 <?php
 
     class Conexao {
-        private $host = '';
-        private $db_name = '';
-        private $usermane = '';
-        private $password = '';
+        private $host = 'localhost:3306';
+        private $db_name = 'mydb';
+        private $usermane = 'root';
+        private $password = '1234';
         private $conn; 
 
         public function fazConexao() {

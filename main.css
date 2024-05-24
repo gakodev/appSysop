@@ -147,6 +147,7 @@ li a:hover:not(.active) {
     height: 100vh;
     padding-top: 60px;
     background-color: #ff6200;
+    
 } 
 
 #bottom h1 {
@@ -159,36 +160,76 @@ li a:hover:not(.active) {
 
     height: max-content;
     width: 169.5vh;
-    border: solid;
-    border-style: dotted;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 45px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 
 }
 
 #title1 {
-    padding: 10px;
-    border: solid;
-    border-style: dotted;
+    
     width: max-content;
 }
 
+#card-form{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 1200px;
+    background-color: white;
+    border-radius: 2vh;
+    box-shadow: #121820 5px 5px 4px;
+    padding-top: 25px;
+
+
+}
+
+#card-form-right {
+
+    height: auto;
+    width: auto;
+    max-width: 594px;
+}
+
+#card-form-right img {
+
+    height: auto;
+    max-width: 100%;
+    
+}
+
+#forma hr {
+
+    height: 570px;
+    width: 0;
+}
+
 form {
+
     padding-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+#div-botao-form {
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+
 .labelText {
 
-    color: white;
+    color: #ff6200 ;
     width: max-content;
     height: max-content;
-    font-family: "Sora", sans-serif; ;
+    font-family: "Sora", sans-serif; 
+    font-weight: 700;
 
 }
 
@@ -196,8 +237,14 @@ form {
     
     width: 200px;
     height: max-content;
-    font-family: "Sora", sans-serif; ;
+    font-family: "Sora", sans-serif; 
+    border-radius: 1vh;
+    border-style: double;
+}
 
+#input7 {
+
+    border-style: double;
 
 }
 
@@ -228,5 +275,50 @@ li {
 	border-radius: 3px;
 	font-size: 0;
 }
+
+.button-28 {
+    appearance: none;
+    background-color: white;
+    border: solid white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ff5400;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: white;
+    background-color: orange;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    border: solid orange;
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
 
 

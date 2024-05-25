@@ -28,7 +28,7 @@ class clienteDao {
     } else {
     echo '<script>alert("Erro!")</script>';
     }
-    echo '<script>location.href="../controller/processa.php?op=listarCliente"</script>';
+    echo '<script>location.href="../../index.html"</script>';
     }
 
     public function listarClientes() { 

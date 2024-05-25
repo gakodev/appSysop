@@ -3,9 +3,9 @@
     class Conexao {
         private $host = 'localhost:3306';
         private $db_name = 'mydb';
-        private $usermane = 'root';
-        private $password = 'root';
-        private $conn; 
+        private $username = 'root';
+        private $password = '';
+        public $conn; 
 
         public function fazConexao() {
             try {

@@ -96,6 +96,41 @@ public function __construct($id, $razaoSocial, $cnpj, $nmrCtt, $emailCtt, $ender
     public function setTemServidor($temServidor) {
         $this->temServidor = $temServidor;
     }
+
+    public function cadastrarCliente () {
+        include_once '../dao/clienteDao.php';
+        $dao = new clienteDao();
+        $dao->cadastrarCliente($this); 
+    }
+
+    public function listarClientes() {
+        include_once '../dao/clienteDao.php';
+        $dao = new clienteDao();
+        $dao->listarClientes();
+        return $dao->listarClientes();  
+    }
+
+    public function resgataCliente($id) {
+        include_once '../dao/ClienteDao.php';
+        $dao = new clienteDao();
+        return $dao->resgataCliente($id);  
+    }
+
+    public function alterarCliente(Cliente $dao){
+        include_once '../dao/clienteDao.php';
+        $dao = new clienteDao();
+        $dao->alterarCliente($this);  
+    }
+
+    public function excluirCliente($id){
+        include_once '../dao/clienteDao.php';
+        $dao = new clienteDao();
+        $dao->excluirCliente($id);  
+    }
+
+
+
+
 }
 
 

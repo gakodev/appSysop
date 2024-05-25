@@ -1,6 +1,6 @@
 <?php
 
-class clienteDao () {
+class clienteDao {
 
     public static function cadastrarCliente (Cliente $cliente) {
 

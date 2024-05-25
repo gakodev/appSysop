@@ -147,6 +147,7 @@ li a:hover:not(.active) {
     height: 100vh;
     padding-top: 60px;
     background-color: #ff6200;
+    align-items: center;
     
 } 
 

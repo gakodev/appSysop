@@ -4,7 +4,7 @@
         private $host = 'localhost:3306';
         private $db_name = 'mydb';
         private $usermane = 'root';
-        private $password = '1234';
+        private $password = 'root';
         private $conn; 
 
         public function fazConexao() {

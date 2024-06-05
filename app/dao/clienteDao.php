@@ -24,7 +24,7 @@ class clienteDao {
     $res = $stmt->execute();
 
         if ($res) {
-        echo '<script>alert("Cadastro realizado!")</script>';
+        //echo '<script>alert("Cadastro realizado!")</script>';
     } else {
     echo '<script>alert("Erro!")</script>';
     }

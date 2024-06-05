@@ -35,21 +35,19 @@ function validaCampos() {
   var email = document.getElementById('input4').value 
   var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if(!re.test(email) || telefone.length != '14' || cnpj.length != '18' ){
-    alert("Dados incorretos!")
-    return false  
-  } else return true;
-
-
-
-    
-
-    
-
-
+    alert("Dados incorretos!");
+    return false
+    } 
+    if (campo7 === 'Sim')  { 
+      var div = document.getElementById('hide-div');
+      div.style.display = 'flex';
+      return true
+    }
   }
+  
 
   
-  // EXPRESSÃO REGULAR PARA FORMATAÇÃO DOS CAMPOS
+// EXPRESSÃO REGULAR PARA FORMATAÇÃO DOS CAMPOS
 
 // Função para validar CNPJ
 const inputCNPJ = document.getElementById('input2');
@@ -74,12 +72,6 @@ function validarTelefone(e) {
   var v=v.replace(/(\d{5})(\d)/,"$1-$2");
   e.target.value = v;
 }
-
-// Função para validar email
-function validarEmail() {
-  
-}
-
 
 
 

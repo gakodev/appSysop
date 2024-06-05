@@ -65,8 +65,8 @@
                     <input id="input6" type="text" class="entrada" name="nMaquinas" maxlength="3" ><br>
                     <label class="labelText" for="temServidor">* Tem servidor?</label>
                     <select id="input7" type="text" class="entrada" name="temServidor">
-                        <option value="Não">Não</option>
-                        <option value="Sim">Sim</option>
+                        <option id="op-nao" value="Não">Não</option>
+                        <option id="op-sim" value="Sim">Sim</option>
                     </select>
                     <input type='hidden' name='id' value='$id'><br>
                     <input type='hidden' name='op' value='cadastrarCliente'><br>
@@ -83,6 +83,7 @@
     </div>
 
         <div id="hide-div">
+
             <form id="hide-form" method="post" action="app/controller/processa.php">
                 <label class="labelText" for="ip">IP do servidor:</label>
                 <input id="hide-div-input1" type="text" class="entrada" name="ip">

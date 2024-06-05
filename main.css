@@ -161,10 +161,11 @@ li a:hover:not(.active) {
 #forma {
 
     height: max-content;
-    width: 169.5vh;
+    width: 170vh;
     padding: 45px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     
 
@@ -237,7 +238,7 @@ form {
 
 .entrada {
     
-    width: 200px;
+    width: 250px;
     height: 25px;
   
     font-family: "Sora", sans-serif; 
@@ -250,6 +251,21 @@ form {
     border-style: double;
 
 }
+
+#hide-div {
+
+    display: none;
+    
+}
+
+#hide-form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 
 .carrosel {
